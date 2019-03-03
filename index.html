@@ -8,9 +8,7 @@
   
     <script> // my own jQuery
     $(function(){
-        
-    });
-     $('button').click(function(){
+       $('button').click(function(){
         // get the inputs from the user
         var Topic= $('#Topic').val();
         console.log(Topic);
@@ -23,7 +21,20 @@
         
         var Sentby = $('#Sent-by').val();
         console.log(Sent-by);
-     });
+        
+         if (id = "Christmas Card") {
+		$("p").css("background-image","christmas.jpg");
+	} 
+	else {
+		$("p").css("background-image","birthday.jpg");
+	}
+     });   
+        
+    $("p").css("background",)
+  
+    });
+   
+     
      
     </script>
   </head>
@@ -43,9 +54,9 @@
  
  
  
- <select name= "Create...">
-     <option value="Christmas Card" selected> Christmas Card</option>
-     <option value= "Birthday Card"> Birthday Card</option>
+ <select id ="card" name= "Create...">
+     <option style="background-image:url(christmas.jpg;" value="Christmas Card" selected> Christmas Card</option>
+     <option style="background-image:url(birthday,jpg);" value= "Birthday Card"> Birthday Card</option>
      <option value= "Welcome Back Card">Welcome Back Card</option>
      <option value= "Feel Better Card" > Feel Better Card</option>
      <option value= "Mother's Day Card" > Mother's Day Card</option>
@@ -55,7 +66,9 @@
  </select>
  
  
- <div id="divA" style="height:380px;width:290px;padding:20px">
+ 
+ 
+
 <h3></h3>
 </div>
  <p></p>
