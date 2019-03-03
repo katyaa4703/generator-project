@@ -11,26 +11,36 @@
        $('button').click(function(){
         // get the inputs from the user
         var Topic= $('#Topic').val();
-        console.log(Topic);
+        // console.log(Topic);
         
         var Backgroundcolor= $('#Background-color').val();
-        console.log(Background-color);
+        // console.log(Background-color);
         
         var To = $('#To').val();
-        console.log(To);
+        // console.log(To);
         
         var Sentby = $('#Sent-by').val();
-        console.log(Sent-by);
+        // console.log(Sent-by);
         
-         if (id = "Christmas Card") {
-		$("p").css("background-image","christmas.jpg");
+         var story = $('p').html("There once was a " +
+                    Topic + " hobbit named " + To + ". " + 
+                    Sentby + " liked to eat " + Backgrouncolor +" " + To + ".");
+        
+        
+     var card= $( "#card" ).val();
+     
+    if (card = "christmas.jpg") {
+		$("p").css(".gallery");
+		$("p").css(card)
 	} 
 	else {
-		$("p").css("background-image","birthday.jpg");
+		$("p").ccss("background-image","birthday.jpg");
 	}
+	
      });   
         
-    $("p").css("background",)
+    $("p").html(story)
+    
   
     });
    
@@ -49,14 +59,13 @@
  To: <input id= "To :"><br>
  Sent-by: <input id= "From:"><br>
  Text: <input id="Type your message here:"><br>
- Create ...
- 
+ Create ... 
  
  
  
  <select id ="card" name= "Create...">
-     <option style="background-image:url(christmas.jpg;" value="Christmas Card" selected> Christmas Card</option>
-     <option style="background-image:url(birthday,jpg);" value= "Birthday Card"> Birthday Card</option>
+     <option style="background-image:url(christmas.jpg)" value="Christmas Card" selected> Christmas Card</option>
+     <option style="background-image:url(birthday,jpg)" value= "Birthday Card"> Birthday Card</option>
      <option value= "Welcome Back Card">Welcome Back Card</option>
      <option value= "Feel Better Card" > Feel Better Card</option>
      <option value= "Mother's Day Card" > Mother's Day Card</option>
@@ -64,14 +73,20 @@
      <option value = "Graduation Card" > Graduation Card </option>
      
  </select>
+ <br>
+ <button>Generate Madlib!</button>
  
- 
- 
- 
+ <div class="gallery">
+  <a target="_blank" href="christmas.jpg">
+    <img src="christmas.jpg" alt="Forest" width="300" height="250">
+  </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 
 <h3></h3>
 </div>
- <p></p>
+ <p>  
+ </p>
   
   </body>
 </html>
