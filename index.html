@@ -19,27 +19,24 @@
         var To = $('#To').val();
         // console.log(To);
         
-        var Sentby = $('#Sent-by').val();
+        var Sentby = $('#From').val();
         // console.log(Sent-by);
+        var Text = $('#text').val();
         
-         var story = $('p').html("There once was a " +
-                    Topic + " hobbit named " + To + ". " + 
-                    Sentby + " liked to eat " + Backgrouncolor +" " + To + ".");
-        
-        
-     var card= $( "#card" ).val();
+        var together= Sentby +" "+ To +" " + Topic+ " "+ Text
+//      var card= $( "#card" ).val();
      
-    if (card = "christmas.jpg") {
-		$("p").css(".gallery");
-		$("p").css(card)
-	} 
-	else {
-		$("p").ccss("background-image","birthday.jpg");
-	}
-	
+//     if (card = "christmas.jpg") {
+// 		$("p").css(".gallery");
+// 		$("p").css(card)
+// 	} 
+// 	else {
+// 		$("p").ccss("background-image","birthday.jpg");
+// 	}
+	$("p").html(together)
      });   
-        
-    $("p").html(story)
+        var back= $("#card").val();
+    $('body').css("background", back)
     
   
     });
@@ -48,6 +45,11 @@
      
     </script>
   </head>
+  <style>
+      body{
+          background:url(birthday.jpg);
+      }
+  </style>
   <body>
 <div>
     Create either a Christmas, Birthday, Welcome Back, Feel better,Mother's Day,Father's Day, or Graduation Card!
@@ -56,16 +58,16 @@
 
  Topic: <input id="Topic"><br>
  Background-Color: <input id= "Background Color"><br>
- To: <input id= "To :"><br>
- Sent-by: <input id= "From:"><br>
- Text: <input id="Type your message here:"><br>
+ To: <input id= "To"><br>
+ Sent-by: <input id= "From"><br>
+ Text: <input id="text"><br>
  Create ... 
  
  
  
- <select id ="card" name= "Create...">
+ <select id ="card" type="select" name= "Create...">
      <option style="background-image:url(christmas.jpg)" value="Christmas Card" selected> Christmas Card</option>
-     <option style="background-image:url(birthday,jpg)" value= "Birthday Card"> Birthday Card</option>
+     <option style="background-image:url(birthday,jpg)" value= "birthday.jpg"> Birthday Card</option>
      <option value= "Welcome Back Card">Welcome Back Card</option>
      <option value= "Feel Better Card" > Feel Better Card</option>
      <option value= "Mother's Day Card" > Mother's Day Card</option>
@@ -74,17 +76,17 @@
      
  </select>
  <br>
- <button>Generate Madlib!</button>
+ <button>Generate Card!</button>
  
- <div class="gallery">
-  <a target="_blank" href="christmas.jpg">
-    <img src="christmas.jpg" alt="Forest" width="300" height="250">
-  </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
+ <!--<div class="gallery">-->
+ <!-- <a target="_blank" href="christmas.jpg">-->
+ <!--   <img src="christmas.jpg" alt="Forest" width="300" height="250">-->
+ <!-- </a>-->
+ <!--   <div class="desc">Add a description of the image here</div>-->
+ <!-- </div>-->
 
 <h3></h3>
-</div>
+<!--</div>-->
  <p>  
  </p>
   
