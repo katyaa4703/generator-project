@@ -18,11 +18,13 @@
        
         var Text = $('#text').val();
         
-        var together= Sentby +" "+ To +" " + Topic+ " "+ Text
+        var together= "Sent by:" + Sentby +" "+ "To:" + To +" " + Topic+ " "+ Text
 
     
 	$("p").html(together)
-	
+	$('#From').css('text-align','right');
+	$('#text').css('text-align','center');
+	$('p').css('text-align', 'center');
 	     var image= $("#card").val();
     $('#back').css({"background": image, "background-repeat": "no-repeat","background-size":" cover"})
    
@@ -51,7 +53,8 @@
    font-size:25px;
    
   }
-   
+  
+ 
   
   </style>
   <body>
@@ -86,10 +89,7 @@
 <h3></h3>
 
  <div id="back">
- <p>
-     
- </p>
-  
+ <p> </p>
  </div>
  
  
