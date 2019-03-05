@@ -9,36 +9,23 @@
     <script> // my own jQuery
     $(function(){
        $('button').click(function(){
-        // get the inputs from the user
+       
         var Topic= $('#Topic').val();
-        // console.log(Topic);
-        
-        //var Backgroundcolor= $('#Background-color').val();
-        // console.log(Background-color);
         
         var To = $('#To').val();
-        // console.log(To);
         
         var Sentby = $('#From').val();
-        // console.log(Sent-by);
+       
         var Text = $('#text').val();
         
         var together= Sentby +" "+ To +" " + Topic+ " "+ Text
-//      var card= $( "#card" ).val();
-     
-//     if (card = "christmas.jpg") {
-// 		$("p").css(".gallery");
-// 		$("p").css(card)
-// 	} 
-// 	else {
-// 		$("p").ccss("background-image","birthday.jpg");
-// 	}
+
+    
 	$("p").html(together)
 	
 	     var image= $("#card").val();
     $('#back').css({"background": image, "background-repeat": "no-repeat","background-size":" cover"})
-    //add the rest of the images you need
-    
+   
 	
      });   
    
