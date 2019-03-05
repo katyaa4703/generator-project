@@ -13,7 +13,7 @@
         var Topic= $('#Topic').val();
         // console.log(Topic);
         
-        var Backgroundcolor= $('#Background-color').val();
+        //var Backgroundcolor= $('#Background-color').val();
         // console.log(Background-color);
         
         var To = $('#To').val();
@@ -34,10 +34,14 @@
 // 		$("p").ccss("background-image","birthday.jpg");
 // 	}
 	$("p").html(together)
-     });   
-        var back= $("#card").val();
-    $('body').css("background", back)
+	
+	     var image= $("#card").val();
+    $('#back').css({"background": image, "background-repeat": "no-repeat","background-size":" cover"})
+    //add the rest of the images you need
     
+	
+     });   
+   
   
     });
    
@@ -46,9 +50,17 @@
     </script>
   </head>
   <style>
-      body{
-          background:url(birthday.jpg);
-      }
+        #back{
+       height:350px;
+       width:300px;
+   
+   }
+   
+   body{
+    background-color:pink;
+   }
+   
+  
   </style>
   <body>
 <div>
@@ -65,30 +77,28 @@
  
  
  
- <select id ="card" type="select" name= "Create...">
-     <option style="background-image:url(christmas.jpg)" value="Christmas Card" selected> Christmas Card</option>
-     <option style="background-image:url(birthday,jpg)" value= "birthday.jpg"> Birthday Card</option>
-     <option value= "Welcome Back Card">Welcome Back Card</option>
-     <option value= "Feel Better Card" > Feel Better Card</option>
-     <option value= "Mother's Day Card" > Mother's Day Card</option>
-     <option value= "Father's Day Card"> Father's Day Card</option>
-     <option value = "Graduation Card" > Graduation Card </option>
+ <select id ="card" name= "Create...">
+     <option value=url(christmas.jpg)  selected> Christmas Card</option>
+     <option value=url(birthday.jpg) > Birthday Card</option>
+     <option value=url(welcomeback.jpg)>Welcome Back Card</option>
+     <option value=url(feelbetter.jpg)  > Feel Better Card</option>
+     <option value=url(mothersday.jpg)  > Mother's Day Card</option>
+     <option value=url(fathersday.jpg) > Father's Day Card</option>
+     <option value=url(graduation.jpg)  > Graduation Card </option>
      
  </select>
  <br>
  <button>Generate Card!</button>
- 
- <!--<div class="gallery">-->
- <!-- <a target="_blank" href="christmas.jpg">-->
- <!--   <img src="christmas.jpg" alt="Forest" width="300" height="250">-->
- <!-- </a>-->
- <!--   <div class="desc">Add a description of the image here</div>-->
- <!-- </div>-->
+
 
 <h3></h3>
-<!--</div>-->
- <p>  
+
+ <div id="back">
+ <p>
+     
  </p>
   
+ </div>
+
   </body>
 </html>
