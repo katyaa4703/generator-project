@@ -10,7 +10,7 @@
     $(function(){
        $('button').click(function(){
        
-        var Topic= $('#Topic').val();
+       
         
         var To = $('#To').val();
         
@@ -18,13 +18,13 @@
        
         var Text = $('#text').val();
         
-        var together= "Sent by:" + Sentby +" "+ "To:" + To +" " + Topic+ " "+ Text
+        var together= "Sent by:"+ Sentby +" "+ "To:" + To +" " + "Message:"+ Text
 
     
 	$("p").html(together)
-	$('#From').css('text-align','right');
-	$('#text').css('text-align','center');
-	$('p').css('text-align', 'center');
+	$('#From').css('text-align','left');
+	$('#text').css('text-align','right');
+//	$('p').css('text-align', 'center');
 	     var image= $("#card").val();
     $('#back').css({"background": image, "background-repeat": "no-repeat","background-size":" cover"})
    
@@ -63,8 +63,7 @@
 </div>
 
 
- Topic: <input id="Topic"><br>
- Background-Color: <input id= "Background Color"><br>
+ 
  To: <input id= "To"><br>
  Sent-by: <input id= "From"><br>
  Text: <input id="text"><br>
