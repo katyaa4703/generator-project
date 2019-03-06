@@ -9,30 +9,16 @@
     <script> // my own jQuery
     $(function(){
        $('button').click(function(){
-        // get the inputs from the user
-        var Topic= $('#Topic').val();
-        // console.log(Topic);
-        
-        //var Backgroundcolor= $('#Background-color').val();
-        // console.log(Background-color);
-        
+    
         var To = $('#To').val();
-        // console.log(To);
+       
         
         var Sentby = $('#From').val();
         
         var Text = $('#text').val();
         
-        var together= Sentby +" "+ To +" " + Topic+ " "+ Text
-//      var card= $( "#card" ).val();
-     
-//     if (card = "christmas.jpg") {
-// 		$("p").css(".gallery");
-// 		$("p").css(card)
-// 	} 
-// 	else {
-// 		$("p").ccss("background-image","birthday.jpg");
-// 	}
+        var together= ""+ Sentby +" "+ To +" "+ Text
+
 	$("p").html(together)
 	
 	     var image= $("#card").val();
@@ -59,23 +45,24 @@
    body{
     background-color:pink;
    }
-   
+    div{
+     font-size:20px;
+    }
   
    
   
   </style>
   <body>
 <div>
-    Create either a Christmas, Birthday, Welcome Back, Feel better,Mother's Day,Father's Day, or Graduation Card!
+    Create One of the Following Cards!
 </div>
 
 
- Topic: <input id="Topic"><br>
- Background-Color: <input id= "Background Color"><br>
+ 
  To: <input id= "To"><br>
  Sent-by: <input id= "From"><br>
  Text: <input id="text"><br>
- Create ... 
+ Create
  
  
  
